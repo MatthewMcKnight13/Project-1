@@ -12,6 +12,31 @@ Use this section to describe your final project and perhaps any links to relevan
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 
+Sample JSON:
+```json
+{
+    "Search": [
+        {
+            "Title": "Crash",
+            "Year": "2004",
+            "imdbID": "tt0375679",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BOTk1OTA1MjIyNV5BMl5BanBnXkFtZTcwODQxMTkyMQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Crash",
+            "Year": "1996",
+            "imdbID": "tt0115964",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZjlhMDBlNDQtMjZkZi00NzJmLWI4MTgtZDdkMzZmZDcyZGNmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+    ],
+    "totalResults": "354",
+    "Response": "True"
+}
+```
+
+
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
