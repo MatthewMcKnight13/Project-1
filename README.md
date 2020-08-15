@@ -6,7 +6,9 @@ PokeDex
 
 ## Project Description
 
-should allow user to select a pokemon from a catagorized list and display a sprites along with basic information about that pokemon
+Will allow user to type in a pokemon name from a input field and display a sprites along with basic information about that pokemon.
+Will do this by taking the name and fetching information by talking to a third party API.
+When user types in a new pokemon it will remove the previous and display the new one.
 
 ## API and Data Sample
 
@@ -48,7 +50,8 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 https://imgur.com/xA8JDh3
 
-Header: will display name of app, and my name 
+Header: will display name of Project, and my name (should we acknoledge the api we use here?)
+ex. PokeDex by Matthew McKnight with help of PokeAPI.
 
 Page:
 Big box will be background of app styled to look like a pokedex
