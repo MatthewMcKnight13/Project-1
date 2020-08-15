@@ -6,11 +6,11 @@ PokeDex
 
 ## Project Description
 
-should allow user to select a pokemon from a catagorized list and display a sprite along with basic information about that pokemon
+should allow user to select a pokemon from a catagorized list and display a sprites along with basic information about that pokemon
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+PokeAPI
 
 Sample JSON:
 ```json
