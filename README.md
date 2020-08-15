@@ -10,7 +10,7 @@ should allow user to select a pokemon from a catagorized list and display a spri
 
 ## API and Data Sample
 
-PokeAPI
+PokeAPI: https://pokeapi.co/docs/v2
 
 Sample JSON:
 ```json
