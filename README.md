@@ -46,9 +46,15 @@ Sample JSON:
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
-### MVP/PostMVP
+https://imgur.com/xA8JDh3
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+Header: will display name of app, and my name 
+
+Page:
+Big box will be background of app styled to look like a pokedex
+input field will be where user types in name of a pokemon
+Image will display clearly
+and information below it in a oraginzied setting.
 
 #### MVP 
 
@@ -61,9 +67,10 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 
 #### PostMVP 
+- Allow user to select from a list of pokemon instead of a input field
 
 - Additional css styling in both mobile and larger screens
-- animation for sprite to move between back facing view to front facing view when first appears
+- animation for sprite to move between back facing view to front facing view when first appears/ or show both sprites at once.
 - add a timer to remove seletected pokemon after a set time
 
 ## Project Schedule
