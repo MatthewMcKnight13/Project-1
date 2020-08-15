@@ -2,11 +2,11 @@
 
 ## Project Name
 
-The name of your project.
+PokeDex
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+should allow user to select a pokemon from a catagorized list and display a sprite along with basic information about that pokemon
 
 ## API and Data Sample
 
@@ -15,25 +15,30 @@ Specify the API you are using and include a link. Show us a snippet of JSON retu
 Sample JSON:
 ```json
 {
-    "Search": [
+    "abilities": [
         {
-            "Title": "Crash",
-            "Year": "2004",
-            "imdbID": "tt0375679",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BOTk1OTA1MjIyNV5BMl5BanBnXkFtZTcwODQxMTkyMQ@@._V1_SX300.jpg"
+            "ability": {
+                "name": "torrent",
+                "url": "https://pokeapi.co/api/v2/ability/67/"
+            },
+            "is_hidden": false,
+            "slot": 1
         },
         {
-            "Title": "Crash",
-            "Year": "1996",
-            "imdbID": "tt0115964",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BZjlhMDBlNDQtMjZkZi00NzJmLWI4MTgtZDdkMzZmZDcyZGNmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-        },
+            "ability": {
+                "name": "rain-dish",
+                "url": "https://pokeapi.co/api/v2/ability/44/"
+            },
+            "is_hidden": true,
+            "slot": 3
+        }
     ],
-    "totalResults": "354",
-    "Response": "True"
-}
+    "base_experience": 63,
+    "forms": [
+        {
+            "name": "squirtle",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/7/"
+        }
 ```
 
 
@@ -46,17 +51,20 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
 
-#### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
+- Allow user to select a pokemon 
+- Reach external Api to reach information
+- css styling
+- add selected pokemon and properties to the DOM to be displayed
+- removed from Dom when a new pokemon is selected
 
-- Add second API
-- Use local storage to save user favorites
+
+#### PostMVP 
+
+- Additional css styling in both mobile and larger screens
+- animation for sprite to move between back facing view to front facing view when first appears
+- add a timer to remove seletected pokemon after a set time
 
 ## Project Schedule
 
