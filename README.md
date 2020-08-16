@@ -47,8 +47,8 @@ Sample JSON:
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
-
-https://imgur.com/xA8JDh3
+![wireframe]
+(https://imgur.com/xA8JDh3)
 
 Header: will display name of Project, and my name (should we acknoledge the api we use here?)
 ex. PokeDex by Matthew McKnight with help of PokeAPI.
