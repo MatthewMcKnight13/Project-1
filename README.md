@@ -10,7 +10,7 @@ Will allow user to type in a pokemon name from a input field and display a sprit
 Will do this by taking the name and fetching information by talking to a third party API.
 When user types in a new pokemon it will remove the previous and display the new one.
 
-## API and Data Sample
+## API and Data Samplehttps://github.com/mattmcknight13/PokeDex.git
 
 PokeAPI: https://pokeapi.co/docs/v2
 
@@ -47,8 +47,8 @@ Sample JSON:
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
-![wireframe]
-(https://imgur.com/xA8JDh3)
+
+![wireframe](https://imgur.com/xA8JDh3.png)
 
 Header: will display name of Project, and my name (should we acknoledge the api we use here?)
 ex. PokeDex by Matthew McKnight with help of PokeAPI.
@@ -93,7 +93,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-https://imgur.com/nyzgGNe
+![priority Matrix](https://imgur.com/nyzgGNe.png)
 
 ## Timeframes
 
