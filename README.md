@@ -79,7 +79,6 @@ and information below it in a oraginzied setting.
 
 #### PostMVP 
 - Allow user to select from a list of pokemon instead of a text input in the desktop version
-- Additional css styling in both mobile and larger screens
 - added decoration css styling (buttons, lights)
 - add type attribute as a background change based on pokemon
 - animation for sprite to move between back facing view to front facing view when first appears/ or show both sprites at once.
