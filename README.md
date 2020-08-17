@@ -71,7 +71,7 @@ and information below it in a oraginzied setting.
 
 
 - Allow user to select a pokemon 
-- Reach external Api to reach information
+- Reach external Api to render height, id, name, weight...
 - css styling for background, and display
 - add selected pokemon and properties to the DOM to be displayed
 - removed from Dom when a new pokemon is selected
@@ -79,7 +79,6 @@ and information below it in a oraginzied setting.
 
 #### PostMVP 
 - Allow user to select from a list of pokemon instead of a text input in the desktop version
-- Additional css styling in both mobile and larger screens
 - added decoration css styling (buttons, lights)
 - add type attribute as a background change based on pokemon
 - animation for sprite to move between back facing view to front facing view when first appears/ or show both sprites at once.
@@ -95,10 +94,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 17| Project Approval | Incomplete
-|August 18| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|August 19| Initial Clickable Model  | Incomplete
-|August 20| MVP | Incomplete
+|August 17| Project Approval, core structure start | Incomplete
+|August 18| finish core strutcure, api use and testing ,css mobile | Incomplete
+|August 19| css desktop, MVP, Post MVP's | Incomplete
+|August 20| Post MVP, testing | Incomplete
 |August 21| Presentations | Incomplete
 
 ## Priority Matrix
@@ -112,12 +111,16 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | core HTML | M| 3hrs| hrs | hrs |
 | core CSS | M| 3hrs| hrs | hrs |
 | core JS | M| 3hrs| hrs | hrs |
-| Input functionality | H | 5hrs | hrs | hrs |
-| Remove Functionality | H | 4hrs | hrs | hrs|
-| Working with API | H | 4hrs| hrs | hrs |
-| CSS Styling | H | 15hrs | hrs | hrs |
-
- | Total | H | 37hrs| hrs | hrs |
+| Input functionality | H | 3hrs | hrs | hrs |
+| Remove Functionality | M | 3hrs | hrs | hrs|
+| Working with API | H | 3rs| hrs | hrs |
+| CSS Styling screen  | H | 3hrs | hrs | hrs |
+| CSS Styling input bar  | L| 1hrs | hrs | hrs |
+| CSS Styling Text-Box  | L | 1.5hrs | hrs | hrs |
+| CSS Styling background  | M | 3hrs | hrs | hrs |
+| CSS Styling fetch positioning  | H | 3hrs | hrs | hrs |
+| Testing  | L | 1.5hrs | hrs | hrs |
+| Total |  | 31hrs| hrs | hrs |
 
 ## Code Snippet
 
