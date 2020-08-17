@@ -71,7 +71,7 @@ and information below it in a oraginzied setting.
 
 
 - Allow user to select a pokemon 
-- Reach external Api to reach information
+- Reach external Api to render height, id, name, weight...
 - css styling for background, and display
 - add selected pokemon and properties to the DOM to be displayed
 - removed from Dom when a new pokemon is selected
