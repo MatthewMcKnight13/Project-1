@@ -72,17 +72,18 @@ and information below it in a oraginzied setting.
 
 - Allow user to select a pokemon 
 - Reach external Api to reach information
-- css styling
+- added decoration css styling (buttons, lights)
+- add type attribute as a background change based on pokemon
 - add selected pokemon and properties to the DOM to be displayed
 - removed from Dom when a new pokemon is selected
 
 
 #### PostMVP 
-- Allow user to select from a list of pokemon instead of a input field
-
+- Allow user to select from a list of pokemon instead of a text input in the desktop version
 - Additional css styling in both mobile and larger screens
 - animation for sprite to move between back facing view to front facing view when first appears/ or show both sprites at once.
-- add a timer to remove seletected pokemon after a set time
+-Add a timer to remove the displayed pokemon after set interval.
+
 
 ## Project Schedule
 
