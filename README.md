@@ -120,9 +120,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | CSS Styling background  | M | 3hrs | hrs | hrs |
 | CSS Styling fetch positioning  | H | 3hrs | hrs | hrs |
 | Testing  | L | 1.5hrs | hrs | hrs |
-
-
- | Total |  | 31hrs| hrs | hrs |
+| Total |  | 31hrs| hrs | hrs |
 
 ## Code Snippet
 
