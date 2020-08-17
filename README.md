@@ -112,16 +112,18 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | core HTML | M| 3hrs| hrs | hrs |
 | core CSS | M| 3hrs| hrs | hrs |
 | core JS | M| 3hrs| hrs | hrs |
-| Input functionality | H | 5hrs | hrs | hrs |
-| Remove Functionality | H | 4hrs | hrs | hrs|
-| Working with API | H | 4hrs| hrs | hrs |
-| CSS Styling  | H | 3 | hrs | hrs |
-| CSS Styling buttons| H | 3 | hrs | hrs |
-| CSS Styling aligning| H | 3 | hrs | hrs |
-| CSS coloring | H | 3 | hrs | hrs |
-| CSS Styling framing | H | 3 | hrs | hrs |
+| Input functionality | H | 3hrs | hrs | hrs |
+| Remove Functionality | M | 3hrs | hrs | hrs|
+| Working with API | H | 3rs| hrs | hrs |
+| CSS Styling screen  | H | 3hrs | hrs | hrs |
+| CSS Styling input bar  | L| 1hrs | hrs | hrs |
+| CSS Styling Text-Box  | L | 1.5hrs | hrs | hrs |
+| CSS Styling background  | M | 3hrs | hrs | hrs |
+| CSS Styling fetch positioning  | H | 3hrs | hrs | hrs |
+| Testing  | L | 1.5hrs | hrs | hrs |
 
- | Total | H | 37hrs| hrs | hrs |
+
+ | Total |  | 31hrs| hrs | hrs |
 
 ## Code Snippet
 
