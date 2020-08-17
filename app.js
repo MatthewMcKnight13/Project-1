@@ -15,12 +15,10 @@ const getPokemon = async (pokemon) => {
 
 //takes call and parses data and displays it adding it to the DOM
 function showPokemon(pokeList) {
-  const display = document.querySelector(`#append-pokemon`);
+  const infoDisplay = document.querySelector(`#text-display`);
   const pokeDiv = document.createElement(`div`);
   pokeDiv.classList.add(`pokemon`);
-  display.append(pokeDiv);
-  let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`
-  pokeDiv.insertAdjacentHTML(`beforeend`, pokeSprite)
+  infoDisplay.append(pokeDiv);
   let pokeStat = `
   <div id="id">Id:${pokeList.id}</div>
   <div id="name">Name:${pokeList.name}</div>
@@ -28,6 +26,11 @@ function showPokemon(pokeList) {
   <div id="weight">Weight:${pokeList.weight}</div>
   `;
   pokeDiv.insertAdjacentHTML(`beforeend`, pokeStat);
+  const spriteDisplay = document.querySelector(`#sprite-display`)
+  // const pokeImg = document.createElement(`img`)
+   let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`
+  spriteDisplay.insertAdjacentHTML(`beforeend`, pokeSprite)
+
 }
 
 //changes casing of first letter to allow for both lower and uppercase spelling
@@ -48,9 +51,11 @@ submit.addEventListener("click", (e) => {
 
 //removees currently displayed pokemon when a new one is inputed
 function pokeRemove() {
-  const removePoke = document.querySelector(`#append-pokemon`);
+  const removeImg = document.querySelector(`#sprite-display`);
+  const removePoke = document.querySelector(`#text-display`)
   while (removePoke.lastChild) {
     removePoke.removeChild(removePoke.lastChild);
+    removeImg.removeChild(removeImg.lastChild)
   }
 }
 
