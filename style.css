@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #cc0000;
+  background-color: #ff0000;
 }
 
 header {
@@ -15,7 +15,16 @@ header {
 }
 
 main {
-  display: flex;
+  background-color: #cc0000;
+  height: 80vh;
+  width: 100vw;
+}
+
+hr {
+  border: black solid;
+  width: 100vw;
+  margin-top: 15%;
+  
 }
 
 button {
@@ -70,11 +79,10 @@ button {
 #input {
   font-size: 15px;
   text-align: start;
-  color: black;
-  background-color: rgb(42, 245, 8);
+  color: rgb(0,0, 0);
+  background-color: rgb(71, 163,85);
   border: black;
   border-radius: 5%;
-  margin-top: 80px;
   margin-left: 40px;
   width: 40%;
   padding: 6%;
@@ -96,14 +104,14 @@ button {
   width: 60vw;
   height: 28vh;
   margin-left: 60px;
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 #text-display {
   width: 65%;
   height: 100px;
-  background-color: rgb(250, 254, 0);
-  border-radius: black solid;
+  background-color: rgb(71, 163,85);
+  border: black solid;
   border-width: 5px;
   margin-left: 16%;
   margin-top: 6%;
@@ -113,4 +121,8 @@ button {
   margin-top: -170px;
   margin-left: 0px;
   width: 180px;
+}
+
+::placeholder {
+  color: black;
 }
