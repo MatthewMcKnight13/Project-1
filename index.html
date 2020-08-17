@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="./app.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <h1></h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>PokeDex</title>
+  </head>
+  <body>
+    <header>
+      <h1>PokeDex</h1>
+      <h3>by Matt McKnight</h3>
+    </header>
+    <div class="circle"></div>
+    <div class="circle" id="red-circle"></div>
+    <div class="circle" id="yellow-circle"></div>
+    <div class="circle" id="green-circle"></div>
+   <div class="search section">
+      <input id="input" type="text" placeholder="Choose a Pokemon"> 
+      <button id="search">Search</button>
+   </div>
+   <div id="display-border"></div>
+   <div id="sprite-display"></div>
+   <div id="text-display"></div>
+    <div id="append-pokemon"></div>
+   
+    </div>
+  </body>
 </html>
