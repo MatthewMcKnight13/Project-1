@@ -115,7 +115,11 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Input functionality | H | 5hrs | hrs | hrs |
 | Remove Functionality | H | 4hrs | hrs | hrs|
 | Working with API | H | 4hrs| hrs | hrs |
-| CSS Styling | H | 15hrs | hrs | hrs |
+| CSS Styling  | H | 3 | hrs | hrs |
+| CSS Styling buttons| H | 3 | hrs | hrs |
+| CSS Styling aligning| H | 3 | hrs | hrs |
+| CSS coloring | H | 3 | hrs | hrs |
+| CSS Styling framing | H | 3 | hrs | hrs |
 
  | Total | H | 37hrs| hrs | hrs |
 
