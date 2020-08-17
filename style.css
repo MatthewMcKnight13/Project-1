@@ -12,6 +12,7 @@ header {
   margin-top: -23px;
   margin-right: -15px;
   margin-left: -15px;
+  width: 100vw;
 }
 
 main {
@@ -77,6 +78,21 @@ button {
   font-size: 13px;
 }
 
+.dpad {
+  background-color: black;
+  height: 3vh;
+  width: 5vw;
+}
+
+.bar {
+  height: 1.3vh;
+  width: 8vw;
+  margin: 1%;
+  margin-top: -5%;
+  margin-bottom: 8%;
+  margin-left: 23%;
+}
+
 #input {
   font-size: 15px;
   text-align: start;
@@ -109,7 +125,7 @@ button {
 }
 
 #text-display {
-  width: 55vw;
+  width: 58vw;
   height: 100px;
   background-color: rgb(71, 163,85);
   border: black solid;
@@ -124,10 +140,49 @@ button {
   width: 180px;
 }
 
-#name {
+#id {
   margin-top: 10%;
+  margin-bottom: 5px;
+}
+
+#name {
+  margin-bottom: 5px;
+}
+
+#height {
+  margin-bottom: 5px;
+}
+
+#up {
+margin-top: 12%;
+margin-left: 60%;
+}
+
+#right {
+margin-left: 65%;
+}
+
+#bottom {
+margin-left: 60%;
+}
+
+#left {
+margin-top: -12%;
+margin-left: 55%;
+}
+
+#yellow {
+background-color: yellow;
+}
+
+#blue {
+background-color: blue;
 }
 
 ::placeholder {
   color: black;
+}
+
+@media (min-width: 768px) {
+
 }

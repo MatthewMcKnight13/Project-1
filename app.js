@@ -22,10 +22,10 @@ function showPokemon(pokeList) {
   let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`
   pokeDiv.insertAdjacentHTML(`beforeend`, pokeSprite)
   let pokeStat = `
-  <div id="name">Name: ${pokeList.name}</div>
-  <div id="id">Id: ${pokeList.id}</div>
-  <div id="height">Height: ${pokeList.height}</div>
-  <div id="weight">Weight: ${pokeList.weight}</div>
+  <div id="id">Id:${pokeList.id}</div>
+  <div id="name">Name:${pokeList.name}</div>
+  <div id="height">Height:${pokeList.height}</div>
+  <div id="weight">Weight:${pokeList.weight}</div>
   `;
   pokeDiv.insertAdjacentHTML(`beforeend`, pokeStat);
 }
