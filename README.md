@@ -52,7 +52,7 @@ Desktop:
 ![wireframe](https://imgur.com/xA8JDh3.png)
 
 
-Mobile
+Mobile:
 ![wireframe](https://imgur.com/xz0FJYn.png)
 
 
