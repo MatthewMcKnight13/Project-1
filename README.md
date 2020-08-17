@@ -116,7 +116,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Working with API | H | 4hrs| hrs | hrs |
 | CSS Styling | H | 15hrs | hrs | hrs |
 
- | Total | H | 32hrs| hrs | hrs |
+ | Total | H | 37hrs| hrs | hrs |
 
 ## Code Snippet
 
