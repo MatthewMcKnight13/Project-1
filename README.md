@@ -49,10 +49,12 @@ Sample JSON:
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
 Desktop:
+
 ![wireframe](https://imgur.com/xA8JDh3.png)
 
 
 Mobile:
+
 ![wireframe](https://imgur.com/xz0FJYn.png)
 
 
