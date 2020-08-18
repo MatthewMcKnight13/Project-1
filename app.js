@@ -21,11 +21,13 @@ function showPokemon(pokeList) {
   const pokeDiv = document.createElement(`div`);
   pokeDiv.classList.add(`pokemon`);
   infoDisplay.append(pokeDiv);
+  const height = pokeList.height / 10;
+  const weight = pokeList.weight / 10;
   let pokeStat = `
   <div id="id">Id:${pokeList.id}</div>
   <div id="name">Name:${pokeList.name}</div>
-  <div id="height">Height:${pokeList.height}</div>
-  <div id="weight">Weight:${pokeList.weight}</div>
+  <div id="height">Height:${height}m</div>
+  <div id="weight">Weight:${weight}kg</div>
   `;
   pokeDiv.insertAdjacentHTML(`beforeend`, pokeStat);
 
@@ -37,7 +39,7 @@ function showPokemon(pokeList) {
 
 //changes casing of first letter to allow for both lower and uppercase spelling
 function changeLetter(input) {
-  const letter = input
+  const letter = input;
   const name =letter.toLowerCase()
   getPokemon(name)
 }
@@ -54,12 +56,12 @@ submit.addEventListener("click", (e) => {
 //removees currently displayed pokemon when a new one is inputed
 function pokeRemove() {
   const removeImg = document.querySelector(`#sprite-display`);
-  const removePoke = document.querySelector(`#text-display`)
+  const removePoke = document.querySelector(`#text-display`);
   while (removePoke.lastChild) {
-    
+
     //removes stats and img of current pokemon when a new one is searched for
     removePoke.removeChild(removePoke.lastChild);
-    removeImg.removeChild(removeImg.lastChild)
+    removeImg.removeChild(removeImg.lastChild);
   }
 }
 

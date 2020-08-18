@@ -107,7 +107,7 @@ and information below it in a oraginzied setting.
 | core HTML | M| 3hrs| 3hrs | 3hrs |
 | core CSS | M| 3hrs| 1hrs | 1hrs |
 | core JS | M| 3hrs| 4hrs | 4hrs |
-| Input functionality | H | 3hrs | 4hrs | 4hrs |
+| Input functionality | H | 3hrs | 2hrs | 2hrs |
 | Remove Functionality | M | 3hrs | 1hrs | 1hrs|
 | Working with API | H | 3rs| 2hrs | 2hrs |
 | CSS Styling screen  | H | 3hrs | 5hrs | hrs |

@@ -162,9 +162,8 @@ button {
 
   body {
   /* height: 30vh;
-   width: 100vw;  */
-   flex-grow: 2;
-   
+   width: 100vw; 
+   flex-grow: 2; */
   }
 
   .circle {
@@ -229,7 +228,6 @@ button {
   }
 
   #sprite-display {
-   
     height: 180px;
     width: 184px;
     background-color: rgb(252, 252, 252);
@@ -241,7 +239,6 @@ button {
   }
 
   #text-display {
-    
     text-align: justify;
     height: 100px;
     width: 190px;
