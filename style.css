@@ -2,15 +2,13 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ff0000;
+  margin: 0px;
 }
 
 header {
   color: #b3a125;
   text-align: center;
   background: #3b4cca;
-  margin-top: -10px;
-  margin-left: -10px;
-  margin-right: -10px;
 }
 
 article {
@@ -24,19 +22,26 @@ main {
   background-color: rgb(165, 205, 208);
   border: black solid;
   text-align: start;
+  
+}
+
+.box-div {
+
 }
 
 footer {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  margin-top: 12%;
+  margin-top: 12px;
 }
 
 hr {
-  border: black solid;
-  width: 100vw;
-  margin-top: 15%;
+  background-color: black;
+  border: black solid 1px;
+  width: 400px;
+  height: 5px;
+  margin-top: 1px;
   padding: 0;
 }
 
@@ -48,32 +53,32 @@ button {
   background-color: rgb(14, 253, 237);
   border: rgb(237, 237, 238) solid;
   border-radius: 50%;
-  width: 10vw;
-  height: 5vh;
+  width: 60px;
+  height: 60px;
 }
 
 #red-circle {
   background-color: rgb(247, 13, 31);
   border: black solid;
   border-radius: 50%;
-  width: 3vw;
-  height: 1.5vh;
+  width: 10px;
+  height: 10px;
 }
 
 #yellow-circle {
   background-color: rgb(247, 255, 74);
   border: black solid;
   border-radius: 50%;
-  width: 3vw;
-  height: 1.5vh;
+  width: 10px;
+  height: 10px;
 }
 
 #green-circle {
   background-color: rgb(65, 247, 9);
   border: black solid;
   border-radius: 50%;
-  width: 3vw;
-  height: 1.5vh;
+  width: 10px;
+  height: 10px;
 }
 
 .pokemon {
@@ -85,18 +90,18 @@ button {
 .fauxPad {
   background-color: black;
   padding: 0;
-  height: 3vh;
-  width: 5vw;
+  height: 30px;
+  width: 25px;
+  margin-right: 0px;
 }
 
 .bar {
-  height: 1.3vh;
-  width: 8vw;
-  margin: 1%;
-  margin-top: 5%;
-  margin-bottom: 8%;
-  margin-left: 15%;
-}
+  height: 15px;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 80px;
+  
+} 
 
 #input {
   font-size: 10px;
@@ -146,7 +151,7 @@ button {
 }
 
 #yellow {
-  margin-right: 30%;
+  margin-right: 250px;
   background-color: yellow;
 }
 
@@ -161,41 +166,7 @@ button {
 @media (min-width: 768px) {
 
   body {
-  /* height: 30vh;
-   width: 100vw; 
-   flex-grow: 2; */
-  }
-
-  .circle {
-    background-color: rgb(14, 253, 237);
-    border: rgb(237, 237, 238) solid;
-    border-radius: 50%;
-    width: 8vw;
-    height: 8vh;
-  }
-
-  #red-circle {
-    background-color: rgb(247, 13, 31);
-    border: black solid;
-    border-radius: 50%;
-    width: 1.5vw;
-    height: 1.5vh;
-  }
-
-  #yellow-circle {
-    background-color: rgb(247, 255, 74);
-    border: black solid;
-    border-radius: 50%;
-    width: 1.5vw;
-    height: 1.5vh;
-  }
-
-  #green-circle {
-    background-color: rgb(65, 247, 9);
-    border: black solid;
-    border-radius: 50%;
-    width: 1.5vw;
-    height: 1.5vh;
+  
   }
 
   main {
@@ -203,6 +174,12 @@ button {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .box-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
   }
 
   .search-section {
@@ -248,4 +225,9 @@ button {
     margin: 10px;
     margin-left: 100px;
   }
+
+  #yellow {
+    margin-right: 900px;
+  }
+
 }

@@ -1,4 +1,3 @@
-
 //function to send input call to api
 const getPokemon = async (pokemon) => {
   pokeRemove();
@@ -7,7 +6,8 @@ const getPokemon = async (pokemon) => {
     const res = await axios.get(url);
     const pokeList = res.data;
     showPokemon(pokeList);
-    // console.log(pokeList);
+    //fetches type of pokemon post MVP
+    console.log(pokeList);
   } catch (error) {
     console.log(`Error: ${error}`);
   }
@@ -15,33 +15,37 @@ const getPokemon = async (pokemon) => {
 
 //takes call and parses data and displays it adding it to the DOM
 function showPokemon(pokeList) {
-
   //append text information about pokemon to dom and display
   const infoDisplay = document.querySelector(`#text-display`);
   const pokeDiv = document.createElement(`div`);
   pokeDiv.classList.add(`pokemon`);
   infoDisplay.append(pokeDiv);
+
+  //convert api data to correct values
   const height = pokeList.height / 10;
   const weight = pokeList.weight / 10;
+  const name = pokeList.name.charAt(0).toUpperCase() + pokeList.name.slice(1);
+
+  //create tags and assign data and append to DOM to display
   let pokeStat = `
   <div id="id">Id:${pokeList.id}</div>
-  <div id="name">Name:${pokeList.name}</div>
+  <div id="name">Name:${name}</div>
   <div id="height">Height:${height}m</div>
   <div id="weight">Weight:${weight}kg</div>
   `;
   pokeDiv.insertAdjacentHTML(`beforeend`, pokeStat);
 
-  //append sprite of pokemon to dom and display
-  const spriteDisplay = document.querySelector(`#sprite-display`)
-   let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`
-  spriteDisplay.insertAdjacentHTML(`beforeend`, pokeSprite)
+  //append sprite of pokemon to DOM and display
+  const spriteDisplay = document.querySelector(`#sprite-display`);
+  let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`;
+  spriteDisplay.insertAdjacentHTML(`beforeend`, pokeSprite);
 }
 
 //changes casing of first letter to allow for both lower and uppercase spelling
 function changeLetter(input) {
   const letter = input;
-  const name =letter.toLowerCase()
-  getPokemon(name)
+  const name = letter.toLowerCase();
+  getPokemon(name);
 }
 
 //event listener that takes input and sends it through to api
@@ -58,13 +62,12 @@ function pokeRemove() {
   const removeImg = document.querySelector(`#sprite-display`);
   const removePoke = document.querySelector(`#text-display`);
   while (removePoke.lastChild) {
-
     //removes stats and img of current pokemon when a new one is searched for
     removePoke.removeChild(removePoke.lastChild);
     removeImg.removeChild(removeImg.lastChild);
   }
 }
-
+   
 // pokeapi info to look for to add to page when called
 // const height = res.data.height returns height
 // const weight = res.data.weight returns weight
@@ -78,5 +81,3 @@ function pokeRemove() {
 // `https://pokeapi.co/api/v2/pokemon/` returns list of 20 pokemon at a time
 // res.data.next shows next 20 pokemon
 // res.data.previous shows previous 20 pokemon
-
-
