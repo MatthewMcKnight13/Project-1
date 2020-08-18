@@ -127,7 +127,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 simple piece of code that allowes the user to use capitalization to reach the desired output from API which only used lowercase lettering.
 
 ```
-ffunction changeLetter(input) {
+function changeLetter(input) {
   const letter = input
   const name =letter.toLowerCase()
   getPokemon(name)
