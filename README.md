@@ -87,10 +87,6 @@ and information below it in a oraginzied setting.
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
@@ -109,18 +105,18 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | core HTML | M| 3hrs| 3hrs | 3hrs |
-| core CSS | M| 3hrs| 3hrs | 3hrs |
+| core CSS | M| 3hrs| 1hrs | 1hrs |
 | core JS | M| 3hrs| 4hrs | 4hrs |
 | Input functionality | H | 3hrs | 4hrs | 4hrs |
 | Remove Functionality | M | 3hrs | 1hrs | 1hrs|
 | Working with API | H | 3rs| 2hrs | 2hrs |
-| CSS Styling screen  | H | 3hrs | 3hrs | hrs |
-| CSS Styling input bar  | L| 1hrs | 2hrs | hrs |
-| CSS Styling Text-Box  | L | 1.5hrs | 2hrs | hrs |
+| CSS Styling screen  | H | 3hrs | 5hrs | hrs |
+| CSS Styling input bar  | L| 1hrs | 1hrs | 1hrs |
+| CSS Styling Text-Box  | L | 1.5hrs | 2hrs | 2hrs |
 | CSS Styling background  | M | 3hrs | 3hrs | hrs |
-| CSS Styling fetch positioning  | H | 3hrs | 3hrs | hrs |
+| CSS Styling fetch positioning  | H | 3hrs | 3hrs | 3hrs |
 | Testing  | L | 1.5hrs | hrs | hrs |
-| Total |  | 31hrs| hrs | hrs |
+| Total |  | 31hrs| 29hrs | hrs |
 
 ## Code Snippet
 

@@ -161,8 +161,10 @@ button {
 @media (min-width: 768px) {
 
   body {
-   width: 100vw; 
-   flex-grow: 1;
+  /* height: 30vh;
+   width: 100vw;  */
+   flex-grow: 2;
+   
   }
 
   .circle {

@@ -33,7 +33,6 @@ function showPokemon(pokeList) {
   const spriteDisplay = document.querySelector(`#sprite-display`)
    let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`
   spriteDisplay.insertAdjacentHTML(`beforeend`, pokeSprite)
-
 }
 
 //changes casing of first letter to allow for both lower and uppercase spelling
@@ -57,6 +56,7 @@ function pokeRemove() {
   const removeImg = document.querySelector(`#sprite-display`);
   const removePoke = document.querySelector(`#text-display`)
   while (removePoke.lastChild) {
+    
     //removes stats and img of current pokemon when a new one is searched for
     removePoke.removeChild(removePoke.lastChild);
     removeImg.removeChild(removeImg.lastChild)
