@@ -93,9 +93,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 17| Project Approval, core structure start | Incomplete
-|August 18| finish core strutcure, api use and testing ,css mobile | Incomplete
+|August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|August 17| Project Approval, core structure start | Complete
+|August 18| finish core strutcure, api use and testing ,css mobile | Complete
 |August 19| css desktop, MVP, Post MVP's | Incomplete
 |August 20| Post MVP, testing | Incomplete
 |August 21| Presentations | Incomplete
