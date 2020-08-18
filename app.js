@@ -16,7 +16,7 @@ const getPokemon = async (pokemon) => {
 //takes call and parses data and displays it adding it to the DOM
 function showPokemon(pokeList) {
 
-  //append text information about pokemon to dom and show on screen
+  //append text information about pokemon to dom and display
   const infoDisplay = document.querySelector(`#text-display`);
   const pokeDiv = document.createElement(`div`);
   pokeDiv.classList.add(`pokemon`);
@@ -28,7 +28,7 @@ function showPokemon(pokeList) {
   <div id="weight">Weight:${pokeList.weight}</div>
   `;
   pokeDiv.insertAdjacentHTML(`beforeend`, pokeStat);
-  
+
   //append sprite of pokemon to dom and display
   const spriteDisplay = document.querySelector(`#sprite-display`)
    let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`

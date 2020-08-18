@@ -124,7 +124,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Code Snippet
 
-simple piece of code that allowes the user to use capitalization to reach the desired output from API which only used lowercase lettering.
+ Takes in the input string and turns everycharacter into a lower case to match up with catoraiztion methods of the API, to allow for spelling to not hinder search.
 
 ```
 function changeLetter(input) {
