@@ -1,7 +1,6 @@
 body {
   display: flex;
   flex-direction: column;
-  /* height: 100%; */
   background-color: #ff0000;
 }
 
@@ -38,8 +37,6 @@ hr {
   padding: 0;
 }
 
-
-
 button {
   padding: 20px;
 }
@@ -50,7 +47,6 @@ button {
   border-radius: 50%;
   width: 10vw;
   height: 5vh;
-  /* margin-top: 5px; */
 }
 
 #red-circle {
@@ -59,8 +55,6 @@ button {
   border-radius: 50%;
   width: 3vw;
   height: 1.5vh;
-  /* margin-left: 50px; */
-  /* margin-top: -47px; */
 }
 
 #yellow-circle {
@@ -69,8 +63,6 @@ button {
   border-radius: 50%;
   width: 3vw;
   height: 1.5vh;
-  /* margin-left: 70px;
-  margin-top: -19px; */
 }
 
 #green-circle {
@@ -79,14 +71,11 @@ button {
   border-radius: 50%;
   width: 3vw;
   height: 1.5vh;
-  /* margin-left: 90px;
-  margin-top: -18px; */
 }
 
 .pokemon {
   font-family: "Press Start 2P", cursive;
   text-align: center;
-  /* margin-left: 19%; */
   font-size: 13px;
 }
 
@@ -94,43 +83,41 @@ button {
   background-color: black;
   padding: 0;
   height: 3vh;
-  width: 5vw;;
+  width: 5vw;
 }
-
-
 
 .bar {
   height: 1.3vh;
   width: 8vw;
-   margin: 1%;
+  margin: 1%;
   margin-top: 5%;
   margin-bottom: 8%;
-   margin-left: 15%;  
+  margin-left: 15%;
 }
 
 #input {
-  font-size: 15px;
+  font-size: 10px;
   text-align: start;
   color: rgb(0, 0, 0);
   background-color: rgb(71, 163, 85);
   border: black;
   border-radius: 5%;
-  /* margin-left: 40px; */
-  width: 40%;
-  padding: 6%;
+  width: 33%;
+  padding: 9%;
 }
 
 #sprite-display {
+  height: 180px;
+  width: 184px;
   background-color: rgb(252, 252, 252);
   margin-top: 20px;
   border: black solid thick;
   border-radius: 10%;
 }
 
-
-
 #text-display {
   height: 100px;
+  width: 190px;
   background-color: rgb(71, 163, 85);
   border: black solid;
   border-width: 5px;
@@ -138,7 +125,6 @@ button {
 }
 
 #sprite {
-  
   margin-left: 0px;
   width: 180px;
 }
@@ -170,4 +156,90 @@ button {
 }
 
 @media (min-width: 768px) {
+
+  body {
+    
+  }
+
+  .circle {
+    background-color: rgb(14, 253, 237);
+    border: rgb(237, 237, 238) solid;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vh;
+  }
+
+  #red-circle {
+    background-color: rgb(247, 13, 31);
+    border: black solid;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vh;
+  }
+
+  #yellow-circle {
+    background-color: rgb(247, 255, 74);
+    border: black solid;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vh;
+  }
+
+  #green-circle {
+    background-color: rgb(65, 247, 9);
+    border: black solid;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vh;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .search-section {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 40px;
+  }
+
+  #input {
+    font-size: 20px;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    background-color: rgb(71, 163, 85);
+    border: black;
+    border-radius: 5%;
+    width: 230px;
+    height: 70px;
+    margin-top: 5px;
+  }
+
+  button {
+    padding: 8px;
+  }
+
+  #sprite-display {
+    height: 180px;
+    width: 184px;
+    background-color: rgb(252, 252, 252);
+    margin-top: 20px;
+    border: black solid thick;
+    border-radius: 10%;
+    margin-left: 120px;
+    margin-bottom: 25px;
+  }
+
+  #text-display {
+    text-align: justify;
+    height: 180px;
+    width: 190px;
+    background-color: rgb(71, 163, 85);
+    border: black solid;
+    border-width: 5px;
+    margin: 10px;
+    margin-left: 100px;
+  }
 }

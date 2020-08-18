@@ -15,6 +15,8 @@ const getPokemon = async (pokemon) => {
 
 //takes call and parses data and displays it adding it to the DOM
 function showPokemon(pokeList) {
+
+  //append text information about pokemon to dom and show on screen
   const infoDisplay = document.querySelector(`#text-display`);
   const pokeDiv = document.createElement(`div`);
   pokeDiv.classList.add(`pokemon`);
@@ -26,8 +28,9 @@ function showPokemon(pokeList) {
   <div id="weight">Weight:${pokeList.weight}</div>
   `;
   pokeDiv.insertAdjacentHTML(`beforeend`, pokeStat);
+  
+  //append sprite of pokemon to dom and display
   const spriteDisplay = document.querySelector(`#sprite-display`)
-  // const pokeImg = document.createElement(`img`)
    let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`
   spriteDisplay.insertAdjacentHTML(`beforeend`, pokeSprite)
 
@@ -54,6 +57,7 @@ function pokeRemove() {
   const removeImg = document.querySelector(`#sprite-display`);
   const removePoke = document.querySelector(`#text-display`)
   while (removePoke.lastChild) {
+    //removes stats and img of current pokemon when a new one is searched for
     removePoke.removeChild(removePoke.lastChild);
     removeImg.removeChild(removeImg.lastChild)
   }
@@ -73,6 +77,4 @@ function pokeRemove() {
 // res.data.next shows next 20 pokemon
 // res.data.previous shows previous 20 pokemon
 
-// Will have to add pokemon name to url to search, then can use the data
 
-// append input to url (look at omdb for search function)
