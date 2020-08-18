@@ -108,27 +108,29 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| core HTML | M| 3hrs| hrs | hrs |
-| core CSS | M| 3hrs| hrs | hrs |
-| core JS | M| 3hrs| hrs | hrs |
-| Input functionality | H | 3hrs | hrs | hrs |
-| Remove Functionality | M | 3hrs | hrs | hrs|
-| Working with API | H | 3rs| hrs | hrs |
-| CSS Styling screen  | H | 3hrs | hrs | hrs |
-| CSS Styling input bar  | L| 1hrs | hrs | hrs |
-| CSS Styling Text-Box  | L | 1.5hrs | hrs | hrs |
-| CSS Styling background  | M | 3hrs | hrs | hrs |
-| CSS Styling fetch positioning  | H | 3hrs | hrs | hrs |
+| core HTML | M| 3hrs| 3hrs | 3hrs |
+| core CSS | M| 3hrs| 3hrs | 3hrs |
+| core JS | M| 3hrs| 4hrs | 4hrs |
+| Input functionality | H | 3hrs | 4hrs | 4hrs |
+| Remove Functionality | M | 3hrs | 1hrs | 1hrs|
+| Working with API | H | 3rs| 2hrs | 2hrs |
+| CSS Styling screen  | H | 3hrs | 3hrs | hrs |
+| CSS Styling input bar  | L| 1hrs | 2hrs | hrs |
+| CSS Styling Text-Box  | L | 1.5hrs | 2hrs | hrs |
+| CSS Styling background  | M | 3hrs | 3hrs | hrs |
+| CSS Styling fetch positioning  | H | 3hrs | 3hrs | hrs |
 | Testing  | L | 1.5hrs | hrs | hrs |
 | Total |  | 31hrs| hrs | hrs |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+simple piece of code that allowes the user to use capitalization to reach the desired output from API which only used lowercase lettering.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+function changeLetter(input) {
+  const letter = input
+  const name =letter.toLowerCase()
+  getPokemon(name)
 }
 ```
 
