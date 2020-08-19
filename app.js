@@ -94,7 +94,6 @@ submit.addEventListener("click", (e) => {
   e.preventDefault();
   const input = document.querySelector(`#input`).value;
   document.querySelector(`#input`).value = "";
-  document.querySelector(`#input`).value = Number;
   changeLetter(input);
 });
 
@@ -120,7 +119,7 @@ function pokeRemove() {
 // console.log(pokeList.types[1].type.name); returns second type if exists
 // const backPic = res.data.sprites.back_default returns sprite back
 // const frontPic = res.data.sprites.front_default returns sprite front
-// `https://pokeapi.co/api/v2/pokemon/${pokemon}` returns single pokemon
+// `https://pokeapi.co/api/v2/pokemon/${pokemon}` returns single pokemon by name or id
 
 // `https://pokeapi.co/api/v2/pokemon/` returns list of 20 pokemon at a time
 // res.data.next shows next 20 pokemon
@@ -130,4 +129,6 @@ function pokeRemove() {
 //other ideas for post mvp's 
 // text assist?
 // adding second type and linear gradient to display
-// add search by id number
+// make desktop a box to select from
+// add box for base stats
+
