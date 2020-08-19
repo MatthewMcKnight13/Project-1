@@ -7,7 +7,7 @@ const getPokemon = async (pokemon) => {
     const pokeList = res.data;
     showPokemon(pokeList);
     //fetches type of pokemon post MVP
-    console.log(pokeList);
+    console.log(pokeList.types[0].type.name);
   } catch (error) {
     console.log(`Error: ${error}`);
   }

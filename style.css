@@ -15,40 +15,6 @@ article {
   display: flex;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(165, 205, 208);
-  border: black solid;
-  text-align: start;
-  
-}
-
-.box-div {
-
-}
-
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  margin-top: 12px;
-}
-
-hr {
-  background-color: black;
-  border: black solid 1px;
-  width: 400px;
-  height: 5px;
-  margin-top: 1px;
-  padding: 0;
-}
-
-button {
-  padding: 20px;
-}
-
 .circle {
   background-color: rgb(14, 253, 237);
   border: rgb(237, 237, 238) solid;
@@ -81,27 +47,23 @@ button {
   height: 10px;
 }
 
-.pokemon {
-  font-family: "Press Start 2P", cursive;
-  text-align: center;
-  font-size: 13px;
-}
-
-.fauxPad {
+hr {
   background-color: black;
+  border: black solid 1px;
+  width: 400px;
+  height: 5px;
+  margin-top: 1px;
   padding: 0;
-  height: 30px;
-  width: 25px;
-  margin-right: 0px;
 }
 
-.bar {
-  height: 15px;
-  width: 60px;
-  margin-top: 10px;
-  margin-left: 80px;
-  
-} 
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(165, 205, 208);
+  border: black solid;
+  text-align: start;
+}
 
 #input {
   font-size: 10px;
@@ -114,6 +76,14 @@ button {
   padding: 9%;
 }
 
+::placeholder {
+  color: black;
+}
+
+button {
+  padding: 20px;
+}
+
 #sprite-display {
   height: 180px;
   width: 184px;
@@ -121,6 +91,11 @@ button {
   margin-top: 20px;
   border: black solid thick;
   border-radius: 10%;
+}
+
+#sprite {
+  margin-left: 0px;
+  width: 180px;
 }
 
 #text-display {
@@ -132,9 +107,10 @@ button {
   margin: 10px;
 }
 
-#sprite {
-  margin-left: 0px;
-  width: 180px;
+.pokemon {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  font-size: 13px;
 }
 
 #id {
@@ -150,24 +126,51 @@ button {
   margin-bottom: 5px;
 }
 
-#yellow {
-  margin-right: 250px;
-  background-color: yellow;
+
+
+footer {
+  display: flex;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 50px;
+}
+
+.bar {
+  height: 10px;
+  width: 30px;
+  margin-top: 10px;
+  margin-left: 80px;
+  border-radius: 30%;
+} 
+
+.box-1 {
+ display: flex;
+ margin-bottom: 30px;
+ margin-left: 120px;
+}
+
+#green {
+  background-color: greenyellow;
 }
 
 #blue {
   background-color: blue;
 }
 
-::placeholder {
-  color: black;
+.pad {
+  margin-left: 200px;
+  background: yellow;
+  width: 160px;
+  height: 80px;
 }
+
 
 @media (min-width: 768px) {
 
-  body {
-  
-  }
 
   main {
     display: flex;
@@ -225,9 +228,4 @@ button {
     margin: 10px;
     margin-left: 100px;
   }
-
-  #yellow {
-    margin-right: 900px;
-  }
-
 }
