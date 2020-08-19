@@ -38,6 +38,46 @@ function showPokemon(pokeList) {
   //append sprite of pokemon to DOM and display
   const spriteDisplay = document.querySelector(`#sprite-display`);
   let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`;
+
+  //changes color of background to match pokemon type
+  const type = pokeList.types[0].type.name;
+  if (type === `fire`) {
+    spriteDisplay.style.backgroundColor = `rgba(238,117,42,0.8)`;
+  } else if (type === `water`) {
+    spriteDisplay.style.backgroundColor = `rgba(93,133,238,0.8)`;
+  } else if (type === `grass`) {
+    spriteDisplay.style.backgroundColor = `rgba(109,193,70,0.8)`;
+  } else if (type === `electric`) {
+    spriteDisplay.style.backgroundColor = `rgba(247,202,42,0.8)`;
+  } else if (type === `normal`) {
+    spriteDisplay.style.backgroundColor = `rgba(158,158,109,0.8)`;
+  } else if (type === `fighting`) {
+    spriteDisplay.style.backgroundColor = `rgba(184,42,36,0.8)`;
+  } else if (type === `flying`) {
+    spriteDisplay.style.backgroundColor = `rgba(158,132,238,0.8)`;
+  } else if (type === `poison`) {
+    spriteDisplay.style.backgroundColor = `rgba(150,58,150,0.8)`;
+  } else if (type === `ground`) {
+    spriteDisplay.style.backgroundColor = `rgba(220,188,93,0.8)`;
+  } else if (type === `rock`) {
+    spriteDisplay.style.backgroundColor = `rgba(175,150,40,0.8)`;
+  } else if (type === `bug`) {
+    spriteDisplay.style.backgroundColor = `rgba(158,175,29,0.8)`;
+  } else if (type === `ghost`) {
+    spriteDisplay.style.backgroundColor = `rgba(101,78,141,0.8)`;
+  } else if (type === `steel`) {
+    spriteDisplay.style.backgroundColor = `rgba(175,175,202,0.8)`;
+  } else if (type === `psychic`) {
+    spriteDisplay.style.backgroundColor = `rgba(247,78,125,0.8)`;
+  } else if (type === `ice`) {
+    spriteDisplay.style.backgroundColor = `rgba(141,211,211,0.8)`;
+  } else if (type === `dragon`) {
+    spriteDisplay.style.backgroundColor = `rgba(101,49,247,0.8)`;
+  } else if (type === `dark`) {
+    spriteDisplay.style.backgroundColor = `rgba(101,78,63,0.8)`;
+  } else if (type === `fairy`) {
+    spriteDisplay.style.backgroundColor = `rgba(255,144,149,0.8)`;
+  }
   spriteDisplay.insertAdjacentHTML(`beforeend`, pokeSprite);
 }
 
@@ -67,7 +107,7 @@ function pokeRemove() {
     removeImg.removeChild(removeImg.lastChild);
   }
 }
-   
+
 // pokeapi info to look for to add to page when called
 // const height = res.data.height returns height
 // const weight = res.data.weight returns weight
