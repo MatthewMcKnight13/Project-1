@@ -7,7 +7,7 @@ const getPokemon = async (pokemon) => {
     const pokeList = res.data;
     showPokemon(pokeList);
     //fetches type of pokemon post MVP
-    console.log(pokeList.types[0].type.name);
+    console.log(pokeList);
   } catch (error) {
     console.log(`Error: ${error}`);
   }
@@ -44,7 +44,7 @@ function showPokemon(pokeList) {
   if (type === `fire`) {
     spriteDisplay.style.backgroundColor = `rgba(238,117,42,0.8)`;
   } else if (type === `water`) {
-    spriteDisplay.style.backgroundColor = `rgba(93,133,238,0.8)`;
+    spriteDisplay.style.backgroundColor = `rgba(93,133,238,0.3)`;
   } else if (type === `grass`) {
     spriteDisplay.style.backgroundColor = `rgba(109,193,70,0.8)`;
   } else if (type === `electric`) {
@@ -68,7 +68,7 @@ function showPokemon(pokeList) {
   } else if (type === `steel`) {
     spriteDisplay.style.backgroundColor = `rgba(175,175,202,0.8)`;
   } else if (type === `psychic`) {
-    spriteDisplay.style.backgroundColor = `rgba(247,78,125,0.8)`;
+    spriteDisplay.style.backgroundColor = `rgba(247,78,125,0.5)`;
   } else if (type === `ice`) {
     spriteDisplay.style.backgroundColor = `rgba(141,211,211,0.8)`;
   } else if (type === `dragon`) {
@@ -94,6 +94,7 @@ submit.addEventListener("click", (e) => {
   e.preventDefault();
   const input = document.querySelector(`#input`).value;
   document.querySelector(`#input`).value = "";
+  document.querySelector(`#input`).value = Number;
   changeLetter(input);
 });
 
@@ -103,6 +104,7 @@ function pokeRemove() {
   const removePoke = document.querySelector(`#text-display`);
   while (removePoke.lastChild) {
     //removes stats and img of current pokemon when a new one is searched for
+    
     removePoke.removeChild(removePoke.lastChild);
     removeImg.removeChild(removeImg.lastChild);
   }
@@ -114,6 +116,8 @@ function pokeRemove() {
 // const pokeId = res.data.id returns id number
 // const name = res.data.name returns name of pokemon
 // const type = res.types.type.name returns type of pokemon
+// console.log(pokeList.types[0].type.name); returns first type found in array
+// console.log(pokeList.types[1].type.name); returns second type if exists
 // const backPic = res.data.sprites.back_default returns sprite back
 // const frontPic = res.data.sprites.front_default returns sprite front
 // `https://pokeapi.co/api/v2/pokemon/${pokemon}` returns single pokemon
@@ -121,3 +125,9 @@ function pokeRemove() {
 // `https://pokeapi.co/api/v2/pokemon/` returns list of 20 pokemon at a time
 // res.data.next shows next 20 pokemon
 // res.data.previous shows previous 20 pokemon
+
+
+//other ideas for post mvp's 
+// text assist?
+// adding second type and linear gradient to display
+// add search by id number
