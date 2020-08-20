@@ -105,18 +105,19 @@ and information below it in a oraginzied setting.
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | core HTML | M| 3hrs| 3hrs | 3hrs |
-| core CSS | M| 3hrs| 1hrs | 1hrs |
+| core CSS | M| 3hrs| 2hrs | 2hrs |
 | core JS | M| 3hrs| 4hrs | 4hrs |
 | Input functionality | H | 3hrs | 2hrs | 2hrs |
 | Remove Functionality | M | 3hrs | 1hrs | 1hrs|
 | Working with API | H | 3rs| 2hrs | 2hrs |
-| CSS Styling screen  | H | 3hrs | 5hrs | hrs |
+| CSS Styling screen  | H | 3hrs | 5hrs | 5hrs |
 | CSS Styling input bar  | L| 1hrs | 1hrs | 1hrs |
 | CSS Styling Text-Box  | L | 1.5hrs | 2hrs | 2hrs |
-| CSS Styling background  | M | 3hrs | 3hrs | hrs |
+| CSS Styling background  | M | 3hrs | 2hrs | 2hrs |
 | CSS Styling fetch positioning  | H | 3hrs | 3hrs | 3hrs |
-| Testing  | L | 1.5hrs | hrs | hrs |
-| Total |  | 31hrs| 29hrs | hrs |
+| Post MVP JS  | L | 2hrs | 2hrs | 2hrs |
+| Testing  | L | 1.5hrs | 1.5hrs | 1.5hrs |
+| Total |  | 31hrs| 30hrs | 30hrs |
 
 ## Code Snippet
 

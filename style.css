@@ -69,13 +69,13 @@ main {
 }
 
 #input {
-  font-size: 10px;
+  font-size: 14px;
   text-align: start;
   color: rgb(0, 0, 0);
   background-color: rgb(71, 163, 85);
   border: black;
   border-radius: 5%;
-  width: 80px;
+  width: 120px;
   padding: 20px;
 }
 
@@ -128,6 +128,64 @@ button {
 
 footer {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.right {
+  
+  height: 150px;
+  width: 190px;
+}
+
+.top {
+  background: black;
+  height: 30px;
+  width: 20px;
+  margin-left: 80px;
+  margin-top: 100px;
+}
+
+.hor {
+  background: black;
+  height: 20px;
+  width: 80px;
+  margin-left: 50px;
+  
+}
+
+.bottom{
+  background: black;
+  height: 30px;
+  width: 20px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.left {
+ 
+  height: 150px;
+  width: 250px;
+  margin-right: 140px;
+}
+
+.blue {
+  background: blue;
+  height: 30px;
+  width: 30px;
+  border: solid black thin;
+  border-radius: 50%;
+  margin-left: 140px;
+  margin-top: 120px;
+}
+
+.yellow {
+  background: yellow; 
+  height: 30px;
+  width: 30px;
+  border: solid black thin;
+  border-radius: 50%;
+  margin-left: 70px;
 }
 
 @media (min-width: 768px) {
@@ -142,6 +200,7 @@ footer {
   .box-div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 700px;
   }
 
@@ -170,13 +229,15 @@ footer {
   #sprite-display {
     height: 180px;
     width: 184px;
-    background-color: rgb(252, 252, 252);
+    background: rgb(252, 252, 252);
     margin-top: 20px;
     border: black solid thick;
     border-radius: 10%;
     margin-left: 120px;
     margin-bottom: 25px;
   }
+
+
 
   #text-display {
     text-align: justify;
@@ -186,4 +247,8 @@ footer {
     margin: 10px;
     margin-left: 100px;
   }
+}
+
+.right {
+  /* margin-right: 250px; */
 }

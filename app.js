@@ -2,20 +2,19 @@
 const getPokemon = async (pokemon) => {
   pokeRemove();
   const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
-  
   try {
     const res = await axios.get(url);
     const pokeList = res.data;
     showPokemon(pokeList);
-    console.log(pokeList);
+    console.log(pokeList.types);
   } catch (error) {
     console.log(`Error: ${error}`);
   }
 };
- 
+
 //takes call and parses data and displays it adding it to the DOM
 function showPokemon(pokeList) {
-  
+
   //append text information about pokemon to dom and display
   const infoDisplay = document.querySelector(`#text-display`);
   const pokeDiv = document.createElement(`div`);
@@ -41,53 +40,111 @@ function showPokemon(pokeList) {
   let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`;
 
   //changes color of background to match pokemon type
-  const type1 = pokeList.types[0].type.name;
-
-  // const type2 = pokeList.types[1].type.name;
-  if (type1 === `fire`) {
-    spriteDisplay.style.backgroundColor = `rgba(238,117,42,0.8)`;
-  } else if (type1 === `water`) {
-    spriteDisplay.style.backgroundColor = `rgba(93,133,238,0.3)`;
-  } else if (type1 === `grass`) {
-    spriteDisplay.style.backgroundColor = `rgba(109,193,70,0.8)`;
-  } else if (type1 === `electric`) {
-    spriteDisplay.style.backgroundColor = `rgba(247,202,42,0.8)`;
-  } else if (type1 === `normal`) {
-    spriteDisplay.style.backgroundColor = `rgba(158,158,109,0.8)`;
-  } else if (type1 === `fighting`) {
-    spriteDisplay.style.backgroundColor = `rgba(184,42,36,0.8)`;
-  } else if (type1 === `flying`) {
-    spriteDisplay.style.backgroundColor = `rgba(158,132,238,0.8)`;
-  } else if (type1 === `poison`) {
-    spriteDisplay.style.backgroundColor = `rgba(150,58,150,0.8)`;
-  } else if (type1 === `ground`) {
-    spriteDisplay.style.backgroundColor = `rgba(220,188,93,0.8)`;
-  } else if (type1 === `rock`) {
-    spriteDisplay.style.backgroundColor = `rgba(175,150,40,0.8)`;
-  } else if (type1 === `bug`) {
-    spriteDisplay.style.backgroundColor = `rgba(158,175,29,0.8)`;
-  } else if (type1 === `ghost`) {
-    spriteDisplay.style.backgroundColor = `rgba(101,78,141,0.8)`;
-  } else if (type1 === `steel`) {
-    spriteDisplay.style.backgroundColor = `rgba(175,175,202,0.8)`;
-  } else if (type1 === `psychic`) {
-    spriteDisplay.style.backgroundColor = `rgba(247,78,125,0.5)`;
-  } else if (type1 === `ice`) {
-    spriteDisplay.style.backgroundColor = `rgba(141,211,211,0.8)`;
-  } else if (type1 === `dragon`) {
-    spriteDisplay.style.backgroundColor = `rgba(101,49,247,0.8)`;
-  } else if (type1 === `dark`) {
-    spriteDisplay.style.backgroundColor = `rgba(101,78,63,0.8)`;
-  } else if (type1 === `fairy`) {
-    spriteDisplay.style.backgroundColor = `rgba(255,144,149,0.8)`;
+  // const type = pokeList.types
+  let type1 = pokeList.types[0].type.name;
+  switch (type1) {
+    case `normal`:
+      spriteDisplay.style.background = `rgba(158,158,109,0.8)`;
+      break;
+    case `fire`:
+      spriteDisplay.style.background = `rgba(238,117,42,0.8)`;
+      break;
+    case `water`:
+      spriteDisplay.style.background = `rgba(93,133,238,0.8)`
+      break;
+    case `electric`:
+      spriteDisplay.style.background = `rgba(247,202,42,0.8)`
+      break;
+    case `grass`:
+      spriteDisplay.style.background = `rgba(109,193,70,0.8)`
+      break;
+    case `ice`:
+      spriteDisplay.style.background = `rgba(141,211,211,0.8)`
+      break;
+    case `fighting`:
+      spriteDisplay.style.background = `rgba(184,42,36,0.8)`
+      break;
+    case `poison`:
+      spriteDisplay.style.background = `rgba(150,58,150,0.8)`
+      break;
+    case `ground`:
+      spriteDisplay.style.background = `rgba(220,188,93,0.8)`
+      break;
+    case `flying`:
+      spriteDisplay.style.background = `rgba(83,176,169,0.8)`
+      break;
+    case `psychic`:
+      spriteDisplay.style.background = `rgba(247,78,125,0.8)`
+      break;
+    case `bug`:
+      spriteDisplay.style.background = `rgba(158,175,29,0.8)`
+      break;
+    case `rock`:
+      spriteDisplay.style.background = `rgba(105,95,54,0.8)`
+      break;
+    case `ghost`:
+      spriteDisplay.style.background = `rgba(101,78,141,0.8)`
+      break;
+    case `dragon`:
+      spriteDisplay.style.background = `rgba(101,49,247,0.8)`
+      break;
+    case `dark`:
+      spriteDisplay.style.background = `rgba(101,78,63,0.8)`
+      break;
+    case `steel`:
+      spriteDisplay.style.background = `rgba(175,175,202,0.8)`
+      break;
+    case `fairy`:
+      spriteDisplay.style.background = `rgba(255,144,149,0.8)`
+      break;
+    default:
+      console.log(`ln 100 error`)
   }
 
-  //possible syntax 
-  //spriteDisplay.backgroundColor = `linear-gradient (a,b)`
+  //changes color of background to match pokemon type
+  // const type = pokeList.types
+  // let type = pokeList.types[i].type.name;
+  // if (type1 === `fire`) {
+  //   spriteDisplay.style.background = `rgba(238,117,42,0.8)`;
+  // } else if (type1 === `water`) {
+  //   spriteDisplay.style.background = `rgba(93,133,238,0.8)`;
+  // } else if (type1 === `grass`) {
+  //   spriteDisplay.style.background = `rgba(109,193,70,0.8)`;
+  // } else if (type1 === `electric`) {
+  //   spriteDisplay.style.background = `rgba(247,202,42,0.8)`;
+  // } else if (type1 === `normal`) {
+  //   spriteDisplay.style.background = `rgba(158,158,109,0.8)`;
+  // } else if (type1 === `fighting`) {
+  //   spriteDisplay.style.background = `rgba(184,42,36,0.8)`;
+  // } else if (type1 === `flying`) {
+  //   spriteDisplay.style.background = `rgba(83,176,169,0.8)`;
+  // } else if (type1 === `poison`) {
+  //   spriteDisplay.style.background = `rgba(150,58,150,0.8)`;
+  // } else if (type1 === `ground`) {
+  //   spriteDisplay.style.background = `rgba(220,188,93,0.8)`;
+  // } else if (type1 === `rock`) {
+  //   spriteDisplay.style.background = `rgba(105,95,54,0.8)`;
+  // } else if (type1 === `bug`) {
+  //   spriteDisplay.style.background = `rgba(158,175,29,0.8)`;
+  // } else if (type1 === `ghost`) {
+  //   spriteDisplay.style.background = `rgba(101,78,141,0.8)`;
+  // } else if (type1 === `steel`) {
+  //   spriteDisplay.style.background = `rgba(175,175,202,0.8)`;
+  // } else if (type1 === `psychic`) {
+  //   spriteDisplay.style.background = `rgba(247,78,125,0.8)`;
+  // } else if (type1 === `ice`) {
+  //   spriteDisplay.style.background = `rgba(141,211,211,0.8)`;
+  // } else if (type1 === `dragon`) {
+  //   spriteDisplay.style.background = `rgba(101,49,247,0.8)`;
+  // } else if (type1 === `dark`) {
+  //   spriteDisplay.style.background = `rgba(101,78,63,0.8)`;
+  // } else if (type1 === `fairy`) {
+  //   spriteDisplay.style.background = `rgba(255,144,149,0.8)`;
+  // }
 
+  //append sprite to page
   spriteDisplay.insertAdjacentHTML(`beforeend`, pokeSprite);
 }
-
 
 //changes casing of first letter to allow for both lower and uppercase spelling
 function changeLetter(input) {
@@ -110,14 +167,15 @@ function pokeRemove() {
   const removeImg = document.querySelector(`#sprite-display`);
   const removePoke = document.querySelector(`#text-display`);
   while (removePoke.lastChild) {
-
     //removes stats and img of current pokemon when a new one is searched for
     removePoke.removeChild(removePoke.lastChild);
     removeImg.removeChild(removeImg.lastChild);
   }
 }
 
-// pokeapi info to look for to add to page when called
+// API chains of currently used call //
+
+// `https://pokeapi.co/api/v2/pokemon/${pokemon}` returns single pokemon by name or id
 // const height = res.data.height returns height
 // const weight = res.data.weight returns weight
 // const pokeId = res.data.id returns id number
@@ -125,19 +183,25 @@ function pokeRemove() {
 // const type = res.types.type.name returns type of pokemon
 // console.log(pokeList.types[0].type.name); returns first type found in array
 // console.log(pokeList.types[1].type.name); returns second type if exists
-// const backPic = res.data.sprites.back_default returns sprite back
 // const frontPic = res.data.sprites.front_default returns sprite front
-// `https://pokeapi.co/api/v2/pokemon/${pokemon}` returns single pokemon by name or id
+
+// select bar start point for desktop future update //
 
 // `https://pokeapi.co/api/v2/pokemon/` returns list of 20 pokemon at a time
 // res.data.next shows next 20 pokemon
 // res.data.previous shows previous 20 pokemon
 
+// additional API call paths for further inforamtion //
 
+// `https://pokeapi.co/api/v2/pokemon-species/${pokemon}`
+// returns a call that can lead to pokedex flavor text.
+// https://pokeapi.co/api/v2/evolution-chain/${pokemon}/
+// shows info on evolutions
+
+// future update ideas //
 //other ideas for post mvp's
-// adding second type and linear gradient to display
-// loading screen, as further down line of pokemon latency does happen
-// text assist?
+// adding second type and linear gradient to display - looking into most effiecent way to do this
+// loading screen, as further down line of pokemon latency does happen - animation questions to ask
+// text assist? - would require a built in database with hard coded results
 // make desktop a box to select from
-// add box for base stats
-
+// add box for base stats, flavor text, and flow chart of evolutions
