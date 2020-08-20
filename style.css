@@ -63,6 +63,9 @@ main {
   background-color: rgb(165, 205, 208);
   border: black solid;
   text-align: start;
+  width: 650px;
+  align-self: center;
+
 }
 
 #input {
@@ -72,8 +75,8 @@ main {
   background-color: rgb(71, 163, 85);
   border: black;
   border-radius: 5%;
-  width: 33%;
-  padding: 9%;
+  width: 80px;
+  padding: 20px;
 }
 
 ::placeholder {
@@ -100,7 +103,7 @@ button {
 
 #text-display {
   height: 100px;
-  width: 190px;
+  width: 200px;
   background-color: rgb(71, 163, 85);
   border: black solid;
   border-width: 5px;
@@ -118,65 +121,22 @@ button {
   margin-bottom: 5px;
 }
 
-#name {
+#name, #height {
   margin-bottom: 5px;
 }
-
-#height {
-  margin-bottom: 5px;
-}
-
 
 
 footer {
   display: flex;
 }
 
-.footer-box {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  margin-top: 50px;
-}
-
-.bar {
-  height: 10px;
-  width: 30px;
-  margin-top: 10px;
-  margin-left: 80px;
-  border-radius: 30%;
-} 
-
-.box-1 {
- display: flex;
- margin-bottom: 30px;
- margin-left: 120px;
-}
-
-#green {
-  background-color: greenyellow;
-}
-
-#blue {
-  background-color: blue;
-}
-
-.pad {
-  margin-left: 200px;
-  background: yellow;
-  width: 160px;
-  height: 80px;
-}
-
-
 @media (min-width: 768px) {
 
 
   main {
-    display: flex;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 1000px;
   }
 
   .box-div {
@@ -220,8 +180,6 @@ footer {
 
   #text-display {
     text-align: justify;
-    height: 100px;
-    width: 190px;
     background-color: rgb(71, 163, 85);
     border: black solid;
     border-width: 5px;

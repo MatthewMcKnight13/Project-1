@@ -131,8 +131,4 @@ function changeLetter(input) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
-	// here is the code to reverse a string of text
-}
-Change Log
-Use this section to document what changes were made and the reasoning behind those changes.
+ Modifyied css so page felt more dynamic and used.

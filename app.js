@@ -2,19 +2,20 @@
 const getPokemon = async (pokemon) => {
   pokeRemove();
   const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+  
   try {
     const res = await axios.get(url);
     const pokeList = res.data;
     showPokemon(pokeList);
-    //fetches type of pokemon post MVP
     console.log(pokeList);
   } catch (error) {
     console.log(`Error: ${error}`);
   }
 };
-
+ 
 //takes call and parses data and displays it adding it to the DOM
 function showPokemon(pokeList) {
+  
   //append text information about pokemon to dom and display
   const infoDisplay = document.querySelector(`#text-display`);
   const pokeDiv = document.createElement(`div`);
@@ -40,46 +41,53 @@ function showPokemon(pokeList) {
   let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`;
 
   //changes color of background to match pokemon type
-  const type = pokeList.types[0].type.name;
-  if (type === `fire`) {
+  const type1 = pokeList.types[0].type.name;
+
+  // const type2 = pokeList.types[1].type.name;
+  if (type1 === `fire`) {
     spriteDisplay.style.backgroundColor = `rgba(238,117,42,0.8)`;
-  } else if (type === `water`) {
+  } else if (type1 === `water`) {
     spriteDisplay.style.backgroundColor = `rgba(93,133,238,0.3)`;
-  } else if (type === `grass`) {
+  } else if (type1 === `grass`) {
     spriteDisplay.style.backgroundColor = `rgba(109,193,70,0.8)`;
-  } else if (type === `electric`) {
+  } else if (type1 === `electric`) {
     spriteDisplay.style.backgroundColor = `rgba(247,202,42,0.8)`;
-  } else if (type === `normal`) {
+  } else if (type1 === `normal`) {
     spriteDisplay.style.backgroundColor = `rgba(158,158,109,0.8)`;
-  } else if (type === `fighting`) {
+  } else if (type1 === `fighting`) {
     spriteDisplay.style.backgroundColor = `rgba(184,42,36,0.8)`;
-  } else if (type === `flying`) {
+  } else if (type1 === `flying`) {
     spriteDisplay.style.backgroundColor = `rgba(158,132,238,0.8)`;
-  } else if (type === `poison`) {
+  } else if (type1 === `poison`) {
     spriteDisplay.style.backgroundColor = `rgba(150,58,150,0.8)`;
-  } else if (type === `ground`) {
+  } else if (type1 === `ground`) {
     spriteDisplay.style.backgroundColor = `rgba(220,188,93,0.8)`;
-  } else if (type === `rock`) {
+  } else if (type1 === `rock`) {
     spriteDisplay.style.backgroundColor = `rgba(175,150,40,0.8)`;
-  } else if (type === `bug`) {
+  } else if (type1 === `bug`) {
     spriteDisplay.style.backgroundColor = `rgba(158,175,29,0.8)`;
-  } else if (type === `ghost`) {
+  } else if (type1 === `ghost`) {
     spriteDisplay.style.backgroundColor = `rgba(101,78,141,0.8)`;
-  } else if (type === `steel`) {
+  } else if (type1 === `steel`) {
     spriteDisplay.style.backgroundColor = `rgba(175,175,202,0.8)`;
-  } else if (type === `psychic`) {
+  } else if (type1 === `psychic`) {
     spriteDisplay.style.backgroundColor = `rgba(247,78,125,0.5)`;
-  } else if (type === `ice`) {
+  } else if (type1 === `ice`) {
     spriteDisplay.style.backgroundColor = `rgba(141,211,211,0.8)`;
-  } else if (type === `dragon`) {
+  } else if (type1 === `dragon`) {
     spriteDisplay.style.backgroundColor = `rgba(101,49,247,0.8)`;
-  } else if (type === `dark`) {
+  } else if (type1 === `dark`) {
     spriteDisplay.style.backgroundColor = `rgba(101,78,63,0.8)`;
-  } else if (type === `fairy`) {
+  } else if (type1 === `fairy`) {
     spriteDisplay.style.backgroundColor = `rgba(255,144,149,0.8)`;
   }
+
+  //possible syntax 
+  //spriteDisplay.backgroundColor = `linear-gradient (a,b)`
+
   spriteDisplay.insertAdjacentHTML(`beforeend`, pokeSprite);
 }
+
 
 //changes casing of first letter to allow for both lower and uppercase spelling
 function changeLetter(input) {
@@ -102,8 +110,8 @@ function pokeRemove() {
   const removeImg = document.querySelector(`#sprite-display`);
   const removePoke = document.querySelector(`#text-display`);
   while (removePoke.lastChild) {
+
     //removes stats and img of current pokemon when a new one is searched for
-    
     removePoke.removeChild(removePoke.lastChild);
     removeImg.removeChild(removeImg.lastChild);
   }
@@ -126,9 +134,10 @@ function pokeRemove() {
 // res.data.previous shows previous 20 pokemon
 
 
-//other ideas for post mvp's 
-// text assist?
+//other ideas for post mvp's
 // adding second type and linear gradient to display
+// loading screen, as further down line of pokemon latency does happen
+// text assist?
 // make desktop a box to select from
 // add box for base stats
 
