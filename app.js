@@ -6,7 +6,6 @@ const getPokemon = async (pokemon) => {
     const res = await axios.get(url);
     const pokeList = res.data;
     showPokemon(pokeList);
-    console.log(pokeList.types);
   } catch (error) {
     console.log(`Error: ${error}`);
   }
@@ -173,35 +172,3 @@ function pokeRemove() {
   }
 }
 
-// API chains of currently used call //
-
-// `https://pokeapi.co/api/v2/pokemon/${pokemon}` returns single pokemon by name or id
-// const height = res.data.height returns height
-// const weight = res.data.weight returns weight
-// const pokeId = res.data.id returns id number
-// const name = res.data.name returns name of pokemon
-// const type = res.types.type.name returns type of pokemon
-// console.log(pokeList.types[0].type.name); returns first type found in array
-// console.log(pokeList.types[1].type.name); returns second type if exists
-// const frontPic = res.data.sprites.front_default returns sprite front
-
-// select bar start point for desktop future update //
-
-// `https://pokeapi.co/api/v2/pokemon/` returns list of 20 pokemon at a time
-// res.data.next shows next 20 pokemon
-// res.data.previous shows previous 20 pokemon
-
-// additional API call paths for further inforamtion //
-
-// `https://pokeapi.co/api/v2/pokemon-species/${pokemon}`
-// returns a call that can lead to pokedex flavor text.
-// https://pokeapi.co/api/v2/evolution-chain/${pokemon}/
-// shows info on evolutions
-
-// future update ideas //
-//other ideas for post mvp's
-// adding second type and linear gradient to display - looking into most effiecent way to do this
-// loading screen, as further down line of pokemon latency does happen - animation questions to ask
-// text assist? - would require a built in database with hard coded results
-// make desktop a box to select from
-// add box for base stats, flavor text, and flow chart of evolutions
