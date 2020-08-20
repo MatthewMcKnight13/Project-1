@@ -32,14 +32,14 @@ function showPokemon(pokeList) {
   <div id="height">Height:${height}m</div>
   <div id="weight">Weight:${weight}kg</div>
   `;
+  //append data to text box
   pokeDiv.insertAdjacentHTML(`beforeend`, pokeStat);
 
   //append sprite of pokemon to DOM and display
   const spriteDisplay = document.querySelector(`#sprite-display`);
   let pokeSprite = `<img id="sprite" alt="sprite" src="${pokeList.sprites.front_default}"  style="width: 200px: height: 200px:"/>`;
 
-  //changes color of background to match pokemon type
-  // const type = pokeList.types
+  //changes color of background to match pokemon type (switch statement)
   let type1 = pokeList.types[0].type.name;
   switch (type1) {
     case `normal`:
@@ -100,47 +100,6 @@ function showPokemon(pokeList) {
       console.log(`ln 100 error`)
   }
 
-  //changes color of background to match pokemon type
-  // const type = pokeList.types
-  // let type = pokeList.types[i].type.name;
-  // if (type1 === `fire`) {
-  //   spriteDisplay.style.background = `rgba(238,117,42,0.8)`;
-  // } else if (type1 === `water`) {
-  //   spriteDisplay.style.background = `rgba(93,133,238,0.8)`;
-  // } else if (type1 === `grass`) {
-  //   spriteDisplay.style.background = `rgba(109,193,70,0.8)`;
-  // } else if (type1 === `electric`) {
-  //   spriteDisplay.style.background = `rgba(247,202,42,0.8)`;
-  // } else if (type1 === `normal`) {
-  //   spriteDisplay.style.background = `rgba(158,158,109,0.8)`;
-  // } else if (type1 === `fighting`) {
-  //   spriteDisplay.style.background = `rgba(184,42,36,0.8)`;
-  // } else if (type1 === `flying`) {
-  //   spriteDisplay.style.background = `rgba(83,176,169,0.8)`;
-  // } else if (type1 === `poison`) {
-  //   spriteDisplay.style.background = `rgba(150,58,150,0.8)`;
-  // } else if (type1 === `ground`) {
-  //   spriteDisplay.style.background = `rgba(220,188,93,0.8)`;
-  // } else if (type1 === `rock`) {
-  //   spriteDisplay.style.background = `rgba(105,95,54,0.8)`;
-  // } else if (type1 === `bug`) {
-  //   spriteDisplay.style.background = `rgba(158,175,29,0.8)`;
-  // } else if (type1 === `ghost`) {
-  //   spriteDisplay.style.background = `rgba(101,78,141,0.8)`;
-  // } else if (type1 === `steel`) {
-  //   spriteDisplay.style.background = `rgba(175,175,202,0.8)`;
-  // } else if (type1 === `psychic`) {
-  //   spriteDisplay.style.background = `rgba(247,78,125,0.8)`;
-  // } else if (type1 === `ice`) {
-  //   spriteDisplay.style.background = `rgba(141,211,211,0.8)`;
-  // } else if (type1 === `dragon`) {
-  //   spriteDisplay.style.background = `rgba(101,49,247,0.8)`;
-  // } else if (type1 === `dark`) {
-  //   spriteDisplay.style.background = `rgba(101,78,63,0.8)`;
-  // } else if (type1 === `fairy`) {
-  //   spriteDisplay.style.background = `rgba(255,144,149,0.8)`;
-  // }
-
   //append sprite to page
   spriteDisplay.insertAdjacentHTML(`beforeend`, pokeSprite);
 }
@@ -166,6 +125,7 @@ function pokeRemove() {
   const removeImg = document.querySelector(`#sprite-display`);
   const removePoke = document.querySelector(`#text-display`);
   while (removePoke.lastChild) {
+   
     //removes stats and img of current pokemon when a new one is searched for
     removePoke.removeChild(removePoke.lastChild);
     removeImg.removeChild(removeImg.lastChild);

@@ -60,10 +60,10 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(165, 205, 208);
+  background-color: rgba(161, 222, 227, 0.947);
   border: black solid;
   text-align: start;
-  width: 650px;
+  width: 500px;
   align-self: center;
 
 }
@@ -72,7 +72,6 @@ main {
   font-size: 14px;
   text-align: start;
   color: rgb(0, 0, 0);
-  background-color: rgb(71, 163, 85);
   border: black;
   border-radius: 5%;
   width: 120px;
@@ -90,7 +89,7 @@ button {
 #sprite-display {
   height: 180px;
   width: 184px;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(242, 242, 242);
   margin-top: 20px;
   border: black solid thick;
   border-radius: 10%;
@@ -104,7 +103,7 @@ button {
 #text-display {
   height: 100px;
   width: 200px;
-  background-color: rgb(71, 163, 85);
+  background-color: rgb(255, 253, 253);
   border: black solid;
   border-width: 5px;
   margin: 10px;
@@ -194,7 +193,7 @@ footer {
   main {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1000px;
+    width: 800px;
   }
 
   .box-div {
@@ -214,7 +213,6 @@ footer {
     font-size: 20px;
     text-align: start;
     color: rgb(0, 0, 0);
-    background-color: rgb(71, 163, 85);
     border: black;
     border-radius: 5%;
     width: 230px;
@@ -237,11 +235,9 @@ footer {
     margin-bottom: 25px;
   }
 
-
-
   #text-display {
     text-align: justify;
-    background-color: rgb(71, 163, 85);
+    
     border: black solid;
     border-width: 5px;
     margin: 10px;
