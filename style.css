@@ -211,10 +211,6 @@ footer {
 
   #input {
     font-size: 20px;
-    text-align: start;
-    color: rgb(0, 0, 0);
-    border: black;
-    border-radius: 5%;
     width: 230px;
     height: 70px;
     margin-top: 5px;
@@ -225,22 +221,12 @@ footer {
   }
 
   #sprite-display {
-    height: 180px;
-    width: 184px;
-    background: rgb(252, 252, 252);
-    margin-top: 20px;
-    border: black solid thick;
-    border-radius: 10%;
     margin-left: 120px;
     margin-bottom: 25px;
   }
 
   #text-display {
     text-align: justify;
-    
-    border: black solid;
-    border-width: 5px;
-    margin: 10px;
     margin-left: 100px;
   }
 }
