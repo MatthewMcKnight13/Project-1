@@ -1,5 +1,6 @@
 //function to send input call to api
 const getPokemon = async (pokemon) => {
+  
   //initalize removal of previous pokemon if one exists
   pokeRemove();
 
@@ -8,6 +9,7 @@ const getPokemon = async (pokemon) => {
 
   // try and
   try {
+
     //assign the axios call/return of info to a variable
     const res = await axios.get(url);
 
@@ -19,6 +21,7 @@ const getPokemon = async (pokemon) => {
 
     //if axios call doesn't happen catch a error message here
   } catch (error) {
+
     //print error message to console
     console.log(`Error: ${error}`);
   }
@@ -26,6 +29,7 @@ const getPokemon = async (pokemon) => {
 
 //takes call and parses data and displays it adding it to the DOM
 function showPokemon(pokeList) {
+
   //append text information about pokemon to dom and display
   const infoDisplay = document.querySelector(`#text-display`);
 
@@ -52,6 +56,7 @@ function showPokemon(pokeList) {
   <div id="height">Height:${height}m</div>
   <div id="weight">Weight:${weight}kg</div>
   `;
+
   //append data to text box
   pokeDiv.insertAdjacentHTML(`beforeend`, pokeStat);
 
@@ -117,6 +122,7 @@ function showPokemon(pokeList) {
       spriteDisplay.style.background = `rgba(255,144,149,0.8)`;
       break;
     default:
+
       //if no color change happens have default be a print to console to see if it gets to this part of code
       console.log(`ln 100 error`);
   }
@@ -137,20 +143,36 @@ function changeLetter(input) {
   getPokemon(name);
 }
 
-//event listener that takes input and sends it through to api
+//cearte variable and assign it to search button
 const submit = document.querySelector(`#search`);
+
+//add event listener on click and create anonymous function
 submit.addEventListener("click", (e) => {
+
+  //allow even default to 
   e.preventDefault();
+
+  //create a variable and assign it to the value of the input field
   const input = document.querySelector(`#input`).value;
+
+  //convert input field to a string
   document.querySelector(`#input`).value = "";
+
+  //initialize changeLetter function
   changeLetter(input);
 });
 
 //removees currently displayed pokemon information and img when a new one is inputed
 function pokeRemove() {
+
+  //create variables and assign them to sprite display and text display
   const removeImg = document.querySelector(`#sprite-display`);
   const removePoke = document.querySelector(`#text-display`);
+
+  //while there is a child of the text display and therfore sprite display
   while (removePoke.lastChild) {
+
+    //remove those children
     removePoke.removeChild(removePoke.lastChild);
     removeImg.removeChild(removeImg.lastChild);
   }
